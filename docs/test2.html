@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The perfect Smartphone?</title>
+<!--     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="testPage">
+    <h1 class="testTitle">
+        The perfect Smartphone?
+    </h1>
+
+<div class="questionSpace">
+    <h2 id="Question1">2. What is your price range?</h2>
+    <div class="row">    
+      <form class="questions" action="index.js">
+        <div class="answer"><input type="radio" id="lowest" name="price" value="lowest">
+            <label for="lowest">€100-€300</label></div>
+        <div class="answer"><input type="radio" id="low" name="price" value="low">
+            <label for="low">€300-€500</label></div>
+        <div class="answer"><input type="radio" id="medium" name="price" value="medium">
+            <label for="medium">€500-€800</label></div>
+        <div class="answer"><input type="radio" id="high" name="price" value="high">
+            <label for="high">€800-€1000</label></div>
+        <div><input type="radio" id="highest" name="price" value="highest">
+            <label for="highest">€1000+</label></div>
+      </form>
+      <div>
+          <a href="result.html"><button id="nextButton">See result</button></a>
+      </div>
+      
+    </div>
+
+</div>
+
+
+</body>
+</html>

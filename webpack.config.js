@@ -1,10 +1,10 @@
 const path = require('path');
-
-
-module.experts = {
-    entry: './docs/main.js',
-    output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'docs'),
-    },
-};
+module.exports = {
+  entry: '.src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'docs'),
+    filename: 'main.js',
+  },
+  mode: 'production',
+  watch: true
+}
