@@ -1,131 +1,155 @@
-@font-face {
-    font-family: 'rubikBold';
-    src: url('/font/Rubik/static/Rubik-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'rubikMedium';
-    src: url('/font/Rubik/static/Rubik-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'rubik';
-    src: url('/font/Rubik/static/Rubik-Regular.ttf');
-}
-
-body {
+/* General */
+body{
+    display: inline;
     margin: 0;
-}
-
-.testPage{
-    background-color: #29339B;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.resultPage{
-    background-color: #29339B;
-}
-
-.questionSpace{
+    padding: 0;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 70%;
 }
-
-.questions {
-    font-family: rubik;
-    font-size: large;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5%;
+header{
+    background-color: black;
+    padding: 2%;
 }
-.answer{
-    margin-bottom: 5%;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.testTitle {
-    text-align: center;
+h1{
     color: white;
-    font-family: rubikBold;
-    font-size: 2.5rem;
+    font-family: Ubuntu, bold;
+    text-align: center;
+    font-size: 40pt;
+    margin-top: 0;
 }
 
-.row {
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Ubuntu, bold;
+    font-size: 20pt;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.flexCol{
     display: flex;
+    flex-direction: column;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* index.html */
+.containerHome {
+    margin-top: 5%;
+    position: relative;
+    text-align: center;
+  }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+.Button1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #C60808;
+    border-radius: 15%;
+    margin-bottom: 5%;
+    padding: 10% 70% 10% 70%;
+  }
+
+.Button2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #C60808;
+    border-radius: 15%;
+    padding: 10% 70% 10% 70%;
+}
+
+/* selection.html */
+#list{
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
 
-
-.homeTitle {
-    text-align: center;
-    color: black;
-    font-family: rubikBold;
-    font-size: 2.5rem;
-}
-
-.resultTitle {
-    text-align: center;
-    color: white;
-    font-family: rubikBold;
-    font-size: 2.5rem;
-}
-
-
-.homeImage {
-    width: 100%;
-}
-
-#startButton {
-    width: auto;
-    padding: 1% 1% 1% 1%;
-    font-family: rubikMedium;
-    font-size: 1.5rem;
-    background-color: #29339B;
-    color: white;
-}
-
-#nextButton {
-    width: 100%;
-    padding: 1% 1% 1% 1%;
-    font-family: rubikMedium;
-    font-size: 1rem;
-    background-color: #29339B;
-    color: white;
-    margin-top: 100%;
-}
-#container {
-    width: 70%;
+/* saved.html */
+.itemsContainer{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0% 2% 2% 2%;
+    align-content: flex-end;
+    border: 5px solid #C60808;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10%;
+    width: 15%;
+    padding: 1%;
+    margin: 1%;
+}
+
+input[type="checkbox"]{
+    margin-top: 8%;
+    margin-right: 7%;
+    border-right:  1px solid black;
+    border-bottom: 1px solid black;
+    height: 30px;
+    width: 30px;
     background-color: white;
+    position: relative;
+    outline: none;
+    transform: rotate(45deg);
+    -webkit-appearance:none;
 }
 
-h2 {
-    text-align: center;
-    font-family: rubikMedium;
-    font-size: 1.5rem;
-    margin-bottom: 3%;
+input[type="checkbox"]:before{
+    border-top:   1px solid black;
+    border-right: 1px solid black;
+    border-left:  1px solid black;
+    position: absolute;
+    content: "";
+    background-color: white;
+    height: 60%;
+    width: 100%;
+    top: -59%;
+    border-radius: 75px 75px 0 0;
 }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+input[type="checkbox"]:after{
+    border-top:   1px solid black;
+    border-right: 1px solid black;
+    border-left:  1px solid black;
+    position: absolute;
+    content: "";
+    background-color: white;
+    height: 60%;
+    width: 100%;
+    transform: rotate(-90deg);
+    top: 20%;
+    right: 77%;
+    border-radius: 75px 75px 0 0;
 }
 
-.aspects {
-    font-family: rubik;
-    margin-left: 5%;
+input[type="checkbox"]:checked,
+input:checked[type="checkbox"]:before,
+input:checked[type="checkbox"]:after{
+    background-color: #FF6161;
+}
+
+.brand{
+    color: black;
+    font-family: Ubuntu, bold;
+    font-size: 20pt;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.type{
+    margin-top: 0;
+    color: black;
+    font-family: Ubuntu, bold;
+    font-size: 15pt;
+    margin-bottom: 0;
 }
