@@ -21,10 +21,8 @@
   },
   "homepage": "https://github.com/EHB-MCT/web2-frontend-GijsVj#readme",
   "dependencies": {
+    "mongodb": "^4.8.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
   }
 }
-
-
-
