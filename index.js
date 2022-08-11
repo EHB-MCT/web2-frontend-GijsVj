@@ -16,7 +16,7 @@ function getData(){
                 return response.json();
              }).then(data => {
                  phone.push(data);
-             })
+             });
         }
     });
 }
@@ -24,7 +24,7 @@ function getData(){
 window.onload = function(){
 
     getData();
-    setTimeout(buildList, 3000);
+    setTimeout(buildList, 5000);
 
     function buildList(){
         let html = '';
@@ -43,8 +43,8 @@ window.onload = function(){
                 </div>
                 <input type="checkbox" id="liked">
             </div>
-            </div>`
+            </div>`;
         }
         document.getElementById('list').innerHTML = html;
     }
-}
+};
