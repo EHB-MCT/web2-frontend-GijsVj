@@ -24,7 +24,7 @@ function getData(){
 window.onload = function(){
 
     getData();
-    setTimeout(buildList, 5000);
+    setTimeout(buildList, 4000);
 
     function buildList(){
         let html = '';
@@ -48,3 +48,4 @@ window.onload = function(){
         document.getElementById('list').innerHTML = html;
     }
 };
+

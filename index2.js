@@ -13,8 +13,8 @@ const client = new MongoClient(url);
          console.log("Connected correctly to server");
          const db = client.db(dbName);
 
-         // Use the collection "perfect smartphone"
-         const col = db.collection("perfect smartphone");
+         // Use the collection "smartphones"
+         const col = db.collection("smartphones");
 
          // Construct a document                                                                                                                                                              
          let smartphoneDocument = {
