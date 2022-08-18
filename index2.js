@@ -39,4 +39,3 @@ const client = new MongoClient(url);
 }
 
 run().catch(console.dir);
-

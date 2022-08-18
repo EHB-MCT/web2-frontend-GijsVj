@@ -28,12 +28,6 @@ window.onload = function(){
 
     function buildList(){
         let html = '';
-        // Ordering of my list
-        phone.sort(function(a,b) {
-            return a.id - b.id;
-        });
-
-
         for(let p of phone){
             html += `<div class="itemsContainer"> <img src="${p.data.thumbnail}" alt="" width="100%">
             <div class="flexRow">
@@ -48,4 +42,3 @@ window.onload = function(){
         document.getElementById('list').innerHTML = html;
     }
 };
-
